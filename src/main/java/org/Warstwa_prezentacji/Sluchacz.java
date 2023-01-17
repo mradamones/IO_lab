@@ -84,7 +84,7 @@ public class Sluchacz extends Uzytkownik {
      * @param grupa
      */
     public boolean zapisDoGrupy(Grupa grupa) {
-        if(grupa.getLiczbaMiejsc() - grupa.getLiczbaZapisanych() > 0)
+        if(grupa.getLiczbaMiejsc() - grupa.getLiczbaZapisanych() > 0 && !zapisaneGrupy.contains(grupa))
         {
             this.zapisaneGrupy.add(grupa);
             grupa.zwiekszZapisanych();

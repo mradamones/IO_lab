@@ -27,7 +27,7 @@ class Uzytkownik {
         new Uzytkownik("","",0,null);
     }
 
-    protected String getImie() {
+    public String getImie() {
         return this.imie;
     }
 
@@ -39,7 +39,7 @@ class Uzytkownik {
         this.imie = imie;
     }
 
-    protected String getNazwisko() {
+    public String getNazwisko() {
         return this.nazwisko;
     }
 
@@ -63,7 +63,7 @@ class Uzytkownik {
         this.rokUrodzenia = rokUrodzenia;
     }
 
-    protected Wydzial getWydzial() {
+    public Wydzial getWydzial() {
         return this.wydzial;
     }
 

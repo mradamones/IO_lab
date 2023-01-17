@@ -4,7 +4,7 @@ import org.Katalog_zapisowy.*;
 
 import java.util.List;
 
-class Uzytkownik {
+public class Uzytkownik {
     private String imie;
     private String nazwisko;
     private int rokUrodzenia;
@@ -27,7 +27,7 @@ class Uzytkownik {
         new Uzytkownik("","",0,null);
     }
 
-    protected String getImie() {
+    public String getImie() {
         return this.imie;
     }
 
@@ -35,7 +35,7 @@ class Uzytkownik {
      *
      * @param imie
      */
-    protected void setImie(String imie) {
+    public void setImie(String imie) {
         this.imie = imie;
     }
 
@@ -47,7 +47,7 @@ class Uzytkownik {
      *
      * @param nazwisko
      */
-    protected void setNazwisko(String nazwisko) {
+    public void setNazwisko(String nazwisko) {
         this.nazwisko = nazwisko;
     }
 

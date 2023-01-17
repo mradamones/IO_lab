@@ -6,6 +6,10 @@ public class Wydzial {
     private String skrot;
     private String dziekan;
 
+    public Wydzial(){
+        new Wydzial(null, null, null);
+    }
+
     /**
      *
      * @param nazwa
