@@ -10,15 +10,14 @@ import java.util.Scanner;
 import java.util.Vector;
 public class Aplikacja {
 
+    Vector <Uzytkownik> uzytkownikVector = new Vector<Uzytkownik>();
     static Vector <Prowadzacy> prowadzacyVector = new Vector<Prowadzacy>();
     static Vector <Sluchacz> sluchaczVector = new Vector<Sluchacz>();
     static Vector <Wydzial> wydzialVector = new Vector <Wydzial>();
     static Vector <Termin> terminVector = new Vector <Termin>();
     static Vector <Kurs> kursVector = new Vector<Kurs>();
     static Vector <Grupa> grupaVector = new Vector<Grupa>();
-
-    public static void main(String args[]) {
-        Vector <Uzytkownik> uzytkownikVector = new Vector<Uzytkownik>();
+    public Aplikacja() {
         wydzialVector.add(new Wydzial("WIT", "W4", "DziekanPiwo"));
         uzytkownikVector.add(new Uzytkownik("Piotr", "Jasik", 2000, wydzialVector.get(0)));
         uzytkownikVector.add(new Uzytkownik("Adam", "Szatkowski", 2000, wydzialVector.get(0)));
@@ -30,6 +29,10 @@ public class Aplikacja {
         sluchaczVector.add(new Sluchacz(uzytkownikVector.get(1), 259056, 2020, false));
         kursVector.add(new Kurs("Kursik", "testKurs", 30, 1, wydzialVector.get(0)));
         grupaVector.add(new Grupa("nazwa", "test", 1,kursVector.get(0), Termin.stringToTermin("12:00-Pn-P"), prowadzacyVector.get(0), "127L"));
+    }
+
+    public static void main(String args[]) {
+        new Aplikacja();
         Scanner scan = new Scanner(System.in);
         while (true) {
             System.out.println("Program obsługujący zapisy na zajęcia na wyższych uczelniach");
