@@ -10,13 +10,13 @@ import java.util.Scanner;
 import java.util.Vector;
 public class Aplikacja {
 
-    Vector <Uzytkownik> uzytkownikVector = new Vector<Uzytkownik>();
-    static Vector <Prowadzacy> prowadzacyVector = new Vector<Prowadzacy>();
-    static Vector <Sluchacz> sluchaczVector = new Vector<Sluchacz>();
-    static Vector <Wydzial> wydzialVector = new Vector <Wydzial>();
-    static Vector <Termin> terminVector = new Vector <Termin>();
-    static Vector <Kurs> kursVector = new Vector<Kurs>();
-    static Vector <Grupa> grupaVector = new Vector<Grupa>();
+    public static Vector <Uzytkownik> uzytkownikVector = new Vector<Uzytkownik>();
+    public static Vector <Prowadzacy> prowadzacyVector = new Vector<Prowadzacy>();
+    public static Vector <Sluchacz> sluchaczVector = new Vector<Sluchacz>();
+    public static Vector <Wydzial> wydzialVector = new Vector <Wydzial>();
+    public static Vector <Termin> terminVector = new Vector <Termin>();
+    public static Vector <Kurs> kursVector = new Vector<Kurs>();
+    public static Vector <Grupa> grupaVector = new Vector<Grupa>();
     public Aplikacja() {
         wydzialVector.add(new Wydzial("WIT", "W4", "DziekanPiwo"));
         uzytkownikVector.add(new Uzytkownik("Piotr", "Jasik", 2000, wydzialVector.get(0)));
